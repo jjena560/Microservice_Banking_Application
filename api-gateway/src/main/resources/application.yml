@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 8080
+zuul:
+  routes:
+    customer-service: /customer-service/**
+    account-service: /account-service/**
